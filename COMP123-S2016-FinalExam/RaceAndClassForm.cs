@@ -8,6 +8,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+/*
+    Author's name : Wooram Moon
+    Author's student Number : 301098673
+    Date last Modified : 
+    Program description
+    1st Revision : Aug 19th
+ */
+
 
 namespace COMP123_M2020_FinalExam
 {
@@ -44,6 +52,10 @@ namespace COMP123_M2020_FinalExam
 
         private void NextButton_Click(object sender, EventArgs e)
         {
+            Character character = Program.character;
+
+            character.Race = this._selectedRace;
+
             FinalForm finalForm = new FinalForm();
             finalForm.previousForm = this;
 
